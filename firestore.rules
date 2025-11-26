@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // permite leitura/escrita na coleção usuarios (APENAS PARA TESTE)
+    match /usuarios/{document=**} {
+      allow read, write: if true;
+    }
+
+    // por padrão, negar acesso a outras coleções
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

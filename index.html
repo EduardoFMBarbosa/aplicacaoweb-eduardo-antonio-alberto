@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aplicação Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- ========== LOGIN ========== -->
+    <div id="login-form" class="card">
+      <h2>Bem-vindo</h2>
+      <p class="subtitle">Faça login para continuar</p>
+
+      <div id="login-message"></div>
+
+      <input type="text" id="login-username" placeholder="Usuário" />
+      <input type="password" id="login-password" placeholder="Senha" />
+
+      <button class="btn" onclick="handleLogin()">Entrar</button>
+
+      <p class="forgot" onclick="openForgot()">Esqueceu a senha?</p>
+      <p class="forgot" onclick="openRegister()">Criar conta</p>
+    </div>
+
+    <!-- ========== CADASTRO ========== -->
+    <div id="register-form" class="card" style="display:none;">
+      <h2>Criar conta</h2>
+      <p class="subtitle">Preencha os dados para continuar</p>
+
+      <div id="register-message"></div>
+
+      <input type="text" id="reg-nome" placeholder="Nome completo" />
+      <input type="email" id="reg-email" placeholder="Seu e-mail" />
+      <input type="password" id="reg-senha" placeholder="Crie uma senha" />
+
+      <button class="btn" onclick="registerUser()">Cadastrar</button>
+      <button class="btn-outline" onclick="backToLogin()">Voltar</button>
+    </div>
+
+    <!-- ========== RECUPERAÇÃO ========== -->
+    <div id="forgot-form" class="card" style="display:none;">
+      <h2>Recuperar senha</h2>
+      <p class="subtitle">Digite seu e-mail para recuperar</p>
+
+      <div id="forgot-message"></div>
+
+      <input type="email" id="recover-email" placeholder="Seu e-mail" />
+
+      <button class="btn" onclick="sendRecovery()">Enviar</button>
+      <button class="btn-outline" onclick="backToLogin()">Voltar</button>
+    </div>
+
+    <!-- ========== LISTA DE USUÁRIOS ========== -->
+    <div id="user-list-view" class="card" style="display:none;">
+      <h2>Usuários cadastrados</h2>
+
+      <ul id="users-container" class="user-list"></ul>
+
+      <button class="btn-outline" onclick="handleLogout()">Sair</button>
+    </div>
+
+  </div>
+
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

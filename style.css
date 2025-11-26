@@ -1,0 +1,155 @@
+/* --------------------------------------------------
+   RESET E CONFIGURAÇÕES INICIAIS
+-------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+
+/* --------------------------------------------------
+   CONTAINER GERAL
+-------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: 420px;
+}
+
+
+/* --------------------------------------------------
+   CARTÕES (TELAS)
+-------------------------------------------------- */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+
+  display: none;
+}
+
+/* A primeira tela exibida */
+#login-form {
+  display: block;
+}
+
+
+/* --------------------------------------------------
+   TIPOGRAFIA E TEXTOS
+-------------------------------------------------- */
+h2 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+#signup-message,
+#error-message,
+#forgot-message {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #d9534f;
+}
+
+.forgot {
+  text-align: center;
+  color: #5b3df7;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+/* --------------------------------------------------
+   FORMULÁRIOS
+-------------------------------------------------- */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+
+  font-size: 15px;
+
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+
+/* --------------------------------------------------
+   BOTÕES
+-------------------------------------------------- */
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+
+  font-size: 16px;
+
+  background: #5b3df7;
+  color: #fff;
+
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.95;
+}
+
+.btn-outline {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+
+  font-size: 16px;
+
+  background: transparent;
+  color: #5b3df7;
+
+  border: 2px solid #5b3df7;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/* --------------------------------------------------
+   LISTA DE USUÁRIOS
+-------------------------------------------------- */
+.user-list {
+  list-style: none;
+  margin-top: 10px;
+
+  max-height: 300px;
+  overflow: auto;
+
+  padding-right: 6px;
+}
+
+.user-list li {
+  background: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 8px;
+
+  border-radius: 8px;
+}
