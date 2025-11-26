@@ -1,9 +1,14 @@
 Link: https://aplica-635a0.web.app/
 
 # aplicacaoweb-eduardo-antonio-alberto
+Passos: 1- Clicar em criar conta;
+        2- Cadastrar um ''Nome Completo'', ''Usuario(login)'', ''E-mail'' e ''Senha'';
+        3- Agora logue com seu ''Usuario'' e ''Senha'';
+        4- Aparecerá uma lista com os ''Usuários Cadastrados'' no banco de dados;
+OBS: 1- Enviarei uma print do banco de dados com um exemplo do dados cadastrais;
+     2- E outra print mostrando como os arquivos estão organizados no Visual Studio Code.
 
 **Feito por: [Eduardo, Alberto e Antonio]**
-
 
 # Projeto – Sistema de Login com Firebase
 
