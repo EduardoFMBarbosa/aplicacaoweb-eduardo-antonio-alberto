@@ -50,8 +50,3 @@ A aplicação pode ser publicada usando:
 firebase deploy
 ```
 
-## 📄 Prints de Funcionamento
-Inclua prints do seu navegador antes de enviar ao professor.
-
----
-
